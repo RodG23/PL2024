@@ -45,7 +45,6 @@ def main(inp):
         with open(inp[2], "w") as output_file:
             output_file.write("<html>\n")
             i = 0
-            j = 0
             while i < len(lines):
                 line = convert_line(lines[i]) 
                 match_list = re.findall("^\d+\. (.+)", lines[i])
