@@ -1,10 +1,6 @@
 import re
 import sys
 
-# Ler o conteúdo do arquivo .md
-with open("teste.md", "r", encoding="utf-8") as file:
-    md_content = file.read()
-
 def convert_line(line):
     h1 = re.compile("^(\#) (.*)")
     h2 = re.compile("^(\#\#) (.*)")
