@@ -13,6 +13,7 @@ class AutomatoFinitoDeterminista:
         self.transicoes = {
             'on': {'on': 'on', 'off': 'off', 'fim': 'fim'},
             'off': {'on': 'on', 'off': 'off', 'fim': 'fim'},
+            'fim': {}
         }
         
         # Defina o estado inicial
@@ -40,7 +41,7 @@ class AutomatoFinitoDeterminista:
                     soma += int(palavra)
                 elif(re.match(r'^=$', palavra)):
                     print(soma)
-            estado_atual = 'fim'
+            estado_atual = self.transicoes[estado_atual]['fim']
             if(estado_atual in self.estados_aceitacao):
                 return 1
             else: 
