@@ -5,7 +5,7 @@
 ## Autor
 
 - A100555
-- João Pedro Mota Baptista
+- Rodrigo Ferreira Gomes
 
 ## Funcionalidades
 
