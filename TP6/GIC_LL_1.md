@@ -39,4 +39,4 @@
 - `     | Id        {Id}`
 - `     | Num       {Num}`
 
-NOTA: Foi adicionado o símbolo terminal `:- ` para conseguir tornar a gramática LL(1).
+NOTA: Foi adicionado o símbolo terminal `:` para conseguir tornar a gramática LL(1).
