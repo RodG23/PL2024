@@ -22,21 +22,21 @@
 
 ## Regras de Produção e LA
 
-` S  -> D S       {?, !, :}`
-`     | ε         {$}`
-` D  -> ? id      {?}`
-`     | ! E       {!}`
-`     | : id = E  {:}`
-` E  -> T E'      {(, Id, Num, ), $}`
-` E' -> + T E'    {+}`
-`     | - T E'    {-}`
-`     | ε         {), $}`
-` T  -> F T'      {(, Id, Num, +, -, ), $}`
-` T' -> * F T'    {*}`
-`     | / F T'    {/}`
-`     | ε         {+, -, ), $}`
-` F  -> ( E )     {(}`
-`     | Id        {Id}`
-`     | Num       {Num}`
+- ` S  -> D S       {?, !, :}`
+- `     | ε         {$}`
+- ` D  -> ? id      {?}`
+- `     | ! E       {!}`
+- `     | : id = E  {:}`
+- ` E  -> T E'      {(, Id, Num, ), $}`
+- ` E' -> + T E'    {+}`
+- `     | - T E'    {-}`
+- `     | ε         {), $}`
+- ` T  -> F T'      {(, Id, Num, +, -, ), $}`
+- ` T' -> * F T'    {*}`
+- `     | / F T'    {/}`
+- `     | ε         {+, -, ), $}`
+- ` F  -> ( E )     {(}`
+- `     | Id        {Id}`
+- `     | Num       {Num}`
 
-NOTA: Foi adicionado o símbolo terminal `:` para conseguir tornar a gramática LL(1).
+NOTA: Foi adicionado o símbolo terminal `:- ` para conseguir tornar a gramática LL(1).
